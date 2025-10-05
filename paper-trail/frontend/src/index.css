@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.ce-block {
+  @apply mb-6; /* Tailwind margin-bottom 1.5rem */
+}
+
+.ce-block:last-child {
+  @apply mb-0;
+}
+

@@ -1,0 +1,55 @@
+body{
+    background-color: #040E4E;
+}
+
+.outfit{
+    font-family: Outfit;
+}
+
+.roboto{
+    font-family: Roboto;
+}
+
+.inter{
+    font-family: Inter;
+}
+
+/* show a small indicator at the left of each block */
+.ce-block {
+  position: relative;
+  padding-left: 20px; /* leave space for indicator */
+}
+
+.ce-block::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #22c55e;/* green indicator */
+  border-radius: 2px;
+}
+
+.ce-block:last-child {
+  margin-bottom: 0;
+}
+
+/* Target tables inside your EditorJS container */
+.editorjs-container table,
+.editorjs-container th,
+.editorjs-container td {
+  border: 2px solid #030303 !important; /* Tailwind gray-700 */
+}
+
+/* Optional: make header cells a bit bolder */
+.editorjs-container th {
+  background-color: #f9fafb; /* Tailwind gray-50 */
+  font-weight: 600;
+}
+
+/* Optional: add slight padding for cleaner layout */
+.editorjs-container td,
+.editorjs-container th {
+  padding: 0.5rem;
+}
