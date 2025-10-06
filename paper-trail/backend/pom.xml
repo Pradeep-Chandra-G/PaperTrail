@@ -49,6 +49,20 @@
 			<scope>runtime</scope>
 		</dependency>
 
+		<!-- Redis Cache Dependencies -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+		</dependency>
+
 		<!-- Cloudinary SDK -->
 		<dependency>
 			<groupId>com.cloudinary</groupId>
@@ -62,7 +76,7 @@
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/io.github.cdimascio/java-dotenv -->
+		<!-- Dotenv for env vars handling -->
 		<dependency>
 			<groupId>io.github.cdimascio</groupId>
 			<artifactId>java-dotenv</artifactId>
